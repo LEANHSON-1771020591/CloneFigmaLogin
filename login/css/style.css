@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-color: #3751fe;
+  --main-font: "Roboto", sans-serif;
+  --second-color: #7a7a7a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+#container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+#right {
+  height: 100vh;
+  width: 60%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+
+#left {
+  height: 100vh;
+  width: 40%;
+  position: relative;
+}
+
+#title {
+  padding-left: 86px;
+  padding-top: 86px;
+  font-size: 30px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+#title-2 {
+  padding-left: 86px;
+  padding-top: 120px;
+  font-size: 36px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+#title-3 {
+  padding-left: 86px;
+  padding-top: 30px;
+  font-size: 18px;
+  color: var(--second-color);
+}
+
+#form-area {
+  box-sizing: border-box;
+  padding: 60px 0 40px 40px;
+}
+
+.form-wrapper {
+  padding-left: 47px;
+  width: 400px;
+}
+
+.input-group {
+  position: relative;
+}
+
+
+.input-box {
+  height: 74px;
+  width: 554px;
+}
+
+input,textarea {
+  color: var(--main-color);
+}
+
+input {
+  padding: 24px 12px 8px 12px;
+  border: 1px solid #d0d0d0;
+  outline: none;
+  transition: border-color 0.25s;
+  font-size: 18px;
+}
+
+.label-login {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  font-size: 13px;
+  color: var(--second-color);
+  background-color: white;
+  padding: 0 4px;
+  pointer-events: none;
+  font-family: var(--main-font);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  font-size: 18px;
+  padding-top: 20px;
+  width: 554px;
+}
+
+.actions a {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 25px;
+}
+
+.checkbox input {
+  accent-color: var(--main-color);
+}
+
+.btn-row {
+  padding-top: 60px;
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  font-family: var(--main-font);
+  width: 129px;
+  height: 54px;
+  flex: 1;
+  padding: auto 0;
+  border: 2px solid var(--main-color);
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--main-color);
+}
+
+#another {
+  padding-top: 40px;
+  display: flex;
+  font-size: 18px;
+}
+
+#another a {
+  text-decoration: none;
+}
+
+#or {
+  color: var(--second-color);
+  padding-left: 80px;
+}
+
+#facebook {
+  color: var(--main-color);
+  font-weight: bold;
+  padding-left: 80px;
+}
+
+#linkeldn {
+  color: var(--main-color);
+  font-weight: bold;
+  padding-left: 80px;
+}
+
+#google {
+  color: var(--main-color);
+  font-weight: bold;
+  padding-left: 80px;
+  padding-right: 40px;
+}
+
+#nav-bar {
+  padding-top: 86px;
+  padding-left: 140px;
+  padding-right: 140px;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--second-color);
+  font-size: 30px;
+}
+
+#Home:hover,#About:hover,#Blog:hover,#Pricing:hover {
+  border-bottom: var(--main-color) solid 4px;
+}
+
+#image {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#email:focus,#password:focus {
+  border-left: 4px solid var(--main-color);
+}
+
+.label-login {
+  font-size: 18px;
+}
+
+#errorMessage {
+  color: red;
+  padding-top: 10px;
+  position: absolute;
+  width: 100%;
+}
